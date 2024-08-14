@@ -100,20 +100,7 @@ app.get('/bookings', (req, res) => {
   
   
   
-  // app.delete('/bookings/:bookingId', (req, res) => {
-  //   const { bookingId } = req.params;
-  
-  //   const deleteQuery = 'DELETE FROM bookings WHERE id = ?';
-  //   connection.query(deleteQuery, [bookingId], (error, results) => {
-  //     if (error) {
-  //       console.error('Error deleting booking:', error);
-  //       res.status(500).json({ message: 'Booking deletion failed. Please try again.' });
-  //     } else {
-  //       console.log('Booking deleted:', results);
-  //       res.status(200).json({ message: 'Booking deleted successfully!' });
-  //     }
-  //   });
-  // });
+ 
   app.delete('/bookings/:bookingId', (req, res) => {
     const { bookingId } = req.params;
   
